@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <!-- Link Text, Name of Controller Action, Value to Pass -->
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li>@Html.ActionLink("About", "Index", "About")</li>
+            <li>@Html.ActionLink("Contact", "Index", "Contact")</li>
+        </ul>
+        @RenderBody()
+    </div>
+</body>
+</html>
